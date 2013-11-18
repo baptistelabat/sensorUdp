@@ -8,4 +8,6 @@ The android application is here https://play.google.com/store/apps/details?id=jp
 
 The original source code is here http://sourceforge.jp/projects/sensorudp/
 
-Thanks to Takashi SASAKI for sharing
+Thanks to Takashi SASAKI for sharing and releasing.
+"SensorUdp is a very old app which I have published first time on Google market.
+Yes, you can use MIT license."
