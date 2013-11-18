@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<TextView android:text="@string/hello" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/TextViewHello"></TextView>
+	<LinearLayout android:id="@+id/LinearLayoutHost"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView android:text="dest. host" android:id="@+id/TextView01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<EditText android:layout_height="wrap_content"
+			android:focusable="true" android:text="133.71.3.2" android:id="@+id/EditTextHost"
+			android:layout_width="wrap_content"></EditText>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayoutPort"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView android:text="dest. port" android:id="@+id/TextViewPort"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+		<EditText android:layout_height="wrap_content" android:text="12345"
+			android:id="@+id/EditTextPort" android:layout_width="wrap_content"></EditText>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayoutMessage"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="text to transmit"
+			android:id="@+id/EditTextDebugMessage"></EditText>
+		<Button android:text="send message" android:layout_width="fill_parent"
+			android:id="@+id/ButtonSendToggle" android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+</LinearLayout>

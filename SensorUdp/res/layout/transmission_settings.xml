@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView android:text="Transmission settings" android:id="@+id/textView2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<LinearLayout android:id="@+id/LinearLayoutHost"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:layout_width="fill_parent">
+			<TextView android:text="dest. host" android:id="@+id/TextView01"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<EditText android:layout_height="wrap_content"
+				android:focusable="true" android:text="127.0.0.1" android:id="@+id/EditTextHost"
+				android:layout_width="wrap_content" android:layout_weight="2"></EditText>
+			<TextView android:layout_height="wrap_content" android:text="dest. port"
+				android:layout_width="wrap_content" android:id="@+id/TextViewPort"></TextView>
+			<EditText android:layout_height="wrap_content" android:text="12345"
+				android:id="@+id/EditTextPort" android:layout_width="wrap_content" android:imeOptions="flagNoEnterAction|flagNoExtractUi"></EditText>
+
+		</LinearLayout>
+		<LinearLayout android:id="@+id/LinearLayoutLiteral"
+			android:orientation="horizontal" android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+			<EditText android:layout_height="wrap_content" android:text="text to transmit"
+				android:id="@+id/EditTextLiteral" android:layout_width="wrap_content"
+				android:layout_weight="2"></EditText>
+			<Button android:text="transmit" android:layout_width="wrap_content"
+				android:id="@+id/ButtonLiteral" android:layout_height="wrap_content"
+				android:layout_gravity="left" android:layout_weight="1"></Button>
+		</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout android:layout_height="fill_parent"
+		android:id="@+id/linearLayout2" android:orientation="vertical"
+		android:layout_width="fill_parent">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/linearLayout3">
+			<TextView android:text="Incoming packets via UDP port"
+				android:layout_width="wrap_content" android:id="@+id/textView1"
+				android:layout_height="wrap_content"></TextView>
+			<EditText android:text="12345" android:layout_width="fill_parent"
+	android:id="@+id/editTextIncomingPort" android:layout_height="wrap_content" android:imeOptions="flagNoEnterAction|flagNoExtractUi"></EditText>
+		</LinearLayout>
+		<TextView android:layout_width="fill_parent" android:id="@+id/textViewReceivedLines"
+			android:layout_height="wrap_content" android:text="Here received packets appears ..."></TextView>
+	</LinearLayout>
+</LinearLayout>

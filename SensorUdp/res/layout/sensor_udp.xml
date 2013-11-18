@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<!-- <TextView android:text="@string/hello" android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:id="@+id/TextViewHello"></TextView> -->
+    <LinearLayout android:id="@+id/LinearLayoutAccelerometer" android:layout_height="wrap_content" android:layout_width="wrap_content">
+	<CheckBox android:layout_height="wrap_content" android:text=""
+		android:id="@+id/CheckBoxAccelerometer" android:layout_width="wrap_content"></CheckBox>
+        <TextView android:layout_height="wrap_content" android:text="accelerometer cvs line" android:layout_width="fill_parent" android:id="@+id/TextViewAccelerometer"></TextView>
+    </LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayoutMagneticField"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<CheckBox android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text=""
+			android:id="@+id/CheckBoxMagneticField"></CheckBox>
+		<TextView android:text="magnetic field cvs line" android:id="@+id/TextViewMagneticField"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayoutOrientation"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<CheckBox android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text=""
+			android:id="@+id/CheckBoxOrientation"></CheckBox>
+		<TextView android:text="orientation cvs line" android:id="@+id/TextViewOrientation"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+	<RadioGroup android:id="@+id/RadioGroupDelay"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<RadioButton android:text="Fastest" android:layout_width="wrap_content"
+			android:id="@+id/RadioButtonFastest" android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:text="Game" android:id="@+id/RadioButtonGame"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:text="Normal" android:layout_width="wrap_content"
+			android:checked="true" android:id="@+id/RadioButtonNormal"
+			android:layout_height="wrap_content"></RadioButton>
+		<RadioButton android:text="UI" android:id="@+id/RadioButtonUi"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+	</RadioGroup>
+
+
+	<LinearLayout android:id="@+id/LinearLayoutNetwork"
+		android:orientation="horizontal" android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		<CheckBox android:layout_height="wrap_content" android:text="Network "
+			android:id="@+id/CheckBoxNetwork" android:layout_width="wrap_content"></CheckBox>
+		<EditText android:text="5000" android:id="@+id/EditTextNetworkMinInterval"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+		<TextView android:text="msec " android:id="@+id/TextView02"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<EditText android:text="10" android:id="@+id/EditTextNetworkMinDistance"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+		<TextView android:text="m" android:id="@+id/TextView03"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+	<TextView android:layout_height="wrap_content" android:text="location by network cvs line"
+		android:layout_width="fill_parent" android:id="@+id/TextViewNetwork"></TextView>
+	<LinearLayout android:id="@+id/LinearLayoutGps"
+		android:orientation="horizontal" android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		<CheckBox android:text="GPS " android:id="@+id/CheckBoxGps"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+		<EditText android:text="5000" android:id="@+id/EditTextGpsMinInterval"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+		<TextView android:text="msec " android:id="@+id/TextView04"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<EditText android:text="10" android:id="@+id/EditTextGpsMinDistance"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+		<TextView android:text="m" android:id="@+id/TextView05"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+	<TextView android:layout_height="wrap_content" android:text="location by GPS cvs line"
+		android:layout_width="fill_parent" android:id="@+id/TextViewGps"></TextView>
+</LinearLayout>

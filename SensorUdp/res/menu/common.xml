@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="Sensor" android:id="@+id/itemSensorSettings"></item>
+	<item android:title="Transmission" android:id="@+id/itemTransmissionSettings"></item>
+	<item android:id="@+id/itemAbout" android:title="About"
+		android:enabled="true" android:visible="true"></item>
+
+
+
+</menu>
